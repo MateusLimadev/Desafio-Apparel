@@ -19,12 +19,12 @@ header{
   
   
 #primeiraLinha {
-    margin-left: -77px; 
+    margin-left: -157px; 
     letter-spacing: 5px;
   }
   
   #segundaLinha {
-    margin-left: -131px;
+    margin-left: -206px;
     letter-spacing: 3px;
     
   }
@@ -45,7 +45,7 @@ header{
   /* Posicionamento do título "ESTAMOS" */
   #est {
     margin-top: 83px;
-    margin-left: -77px;
+    margin-left: -161px;
     font-size: 47px; }
   
 
@@ -59,7 +59,7 @@ header{
     
 }
 
-p{
+.desktop-paragraph{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: lighter;
     font-size: 16px;
@@ -68,6 +68,7 @@ p{
     padding-left: 91px;
     margin-bottom: 43px;
     line-height: 1.5;
+    margin-left:107px;
 
 }
 
@@ -212,6 +213,13 @@ p{
     /* Garanta que o parágrafo de dispositivos móveis esteja visível */
     .mobile-paragraph {
       display: block;
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: lighter;
+      font-size: 16px;
+     text-align: left;
+     color: #b36666;
+     margin-bottom: 43px;
+     line-height: 1.5;
     }
 }
 
@@ -239,6 +247,7 @@ p{
     /* Oculta o parágrafo de dispositivos móveis em telas maiores */
     .mobile-paragraph {
         display: none;
+        margin-right: 50px;
     }
 }
 
