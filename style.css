@@ -1,0 +1,252 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+header{
+    display: inline;
+    margin-left: 105px;
+    
+    
+}
+
+.logo{
+  margin-bottom: -22px;
+  padding-top: 50px;
+  
+}
+  
+  
+  
+  
+#primeiraLinha {
+    margin-left: -77px; 
+    letter-spacing: 5px;
+  }
+  
+  #segundaLinha {
+    margin-left: -131px;
+    letter-spacing: 3px;
+    
+  }
+  
+
+
+
+/* Estilos para o título "ESTAMOS" */
+#est {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+    color: #ee4444;
+    font-size: 22px;
+    letter-spacing: 14px;
+    
+  }
+  
+  /* Posicionamento do título "ESTAMOS" */
+  #est {
+    margin-top: 83px;
+    margin-left: -77px;
+    font-size: 47px; }
+  
+
+#che{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    color: #3d0c0c;
+    font-size: 47px;
+    margin-top: -33px;
+    
+    
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: left;
+    color: #b36666;
+    padding-left: 91px;
+    margin-bottom: 43px;
+    line-height: 1.5;
+
+}
+
+
+  
+
+.container{
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: flex-start; /* Alinhar os elementos ao topo */
+    text-align: center;
+    
+}
+
+.content{
+    flex-grow: 1;
+    flex: 1; /* Cresce flexivelmente, mas não totalmente */
+    padding: 20px; /* Adiciona espaço em torno do conteúdo */
+}
+
+
+.imgmoça{
+  margin-top: -137px;
+  margin-right: -8px;
+  height: 100vh;
+  
+  
+} 
+
+
+  
+.search {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search input[type="text"] {
+    width: 326px;
+    height: 21px; /* Aumente o valor para definir a altura desejada */
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #b36666;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Estilos para o campo de entrada de texto quando em foco (clicado) */
+  .search input[type="text"]:focus {
+    border-color: #993939; /* Define a cor da borda de foco como um tom mais escuro */
+    outline: none; /* Remove o contorno padrão do navegador */
+    color: #993939;
+  }
+  
+  .search button[type="submit"] {
+    background-color: #e79f9f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    height: 41px; /* Aumente o valor para definir a altura desejada */
+    width: 79px; /* Aumente o valor para definir a largura desejada */
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ce8484;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .9s ease;
+  }
+  
+  .search button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: #da9292;
+  }
+  
+  .search input[type="text"]::placeholder {
+    color: #d8b8b8b6;
+  }
+  
+  .search input[type="text"]:-ms-input-placeholder {
+    color: #b36666;
+  }
+  
+  
+.search button[type="submit"] i {
+    font-size: 20px; 
+    color: #ffffff; 
+    margin-right: 5px; 
+  }
+  
+  #mensagem{
+    padding: 25px;
+  }
+
+  .alert-icon {
+    display: none;
+    color: rgba(255, 0, 0, 0.336); /* Cor vermelha para o ícone de alerta */
+    font-size: 18px; /* Tamanho do ícone */
+    position: absolute;
+    top: 55%;
+    right: 84px;
+    transform: translateY(-50%);
+  }
+  
+/* Estilos para telas pequenas (480px ou menos) */
+@media screen and (max-width: 480px) {
+    /* Mostra a imagem pequena da moça e aplica margens */
+    .imgmoça-mobile {
+      display: block;
+      margin-top: 40px;
+      width: 100%;
+      padding-bottom: 60px;
+    }
+    
+    #est {
+        text-align: center; 
+        font-size: 35px;
+        margin: 0 auto; 
+    }
+    
+    #che, #segundaLinha, #primeiraLinha {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 16px; 
+        margin-left: -2px;
+    }
+    
+    /* Oculta a imagem grande da moça em telas menores */
+    .imgmoça {
+      display: none;
+    }
+  
+    /* Redefina os estilos para o parágrafo */
+    p {
+      padding-left: 10px;
+    }
+    
+    /* Oculta o parágrafo principal para desktop */
+    p:not(.mobile-paragraph) {
+      display: none;
+    }
+    
+    /* Garanta que o parágrafo de dispositivos móveis esteja visível */
+    .mobile-paragraph {
+      display: block;
+    }
+}
+
+/* Estilos para telas maiores (481px ou mais) */
+@media screen and (min-width: 481px) {
+    /* Mostra a imagem grande da moça e aplica margens */
+    .imgmoça {
+      display: block;
+      margin-top: -137px;
+      margin-right: -8px;
+      height: 100vh;
+    }
+  
+    /* Oculta a imagem pequena da moça em telas maiores */
+    .imgmoça-mobile {
+      display: none;
+    }
+    
+    
+    .first-line {
+        text-align: center;
+        display: block; /* Garante que seja um bloco para centralizar o texto */
+    }
+
+    /* Oculta o parágrafo de dispositivos móveis em telas maiores */
+    .mobile-paragraph {
+        display: none;
+    }
+}
+
+
+
+  
+  
+
+
+    
+  

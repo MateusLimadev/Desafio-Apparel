@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel</title>
+    <!-- Importa o arquivo CSS de font-awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Importa seu arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Importa seu arquivo JavaScript -->
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="projetobase/images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="header-with-margin"> 
+        <!-- Logotipo da empresa -->
+        <img class="logo" src="projetobase/images/logo.svg" alt="logotipo">
+        <!-- Imagem móvel da moça -->
+        <img src="projetobase/images/hero-mobile.jpg" alt="mocamobile" class="imgmoça-mobile">
+    </header>
+    
+   
+    <div class="container">
+    
+    <div class="content">
+        <div id=""><h2 id="est"> ESTAMOS</h2>
+            <h1 id="che">
+                <span id="primeiraLinha">CHEGANDO</span>
+                <br>
+                <span id="segundaLinha">EM BREVE</span>
+            </h1>
+              
+        <p class="desktop-paragraph"> <!-- Parágrafo para desktop -->
+            Olá queridos clientes! <br>
+            Atualmente estamos construindo nossa nova loja de moda.<br>
+            Adicione seu e-mail abaixo para se manter atualizado sobre<br>
+            os anúncios e nossas ofertas de lançamento.
+        </p>
+
+        <p class="mobile-paragraph"> <!-- Parágrafo para dispositivos móveis -->
+            <span class="first-line">Olá queridos clientes!</span> <!-- Primeira linha centralizada -->
+            Atualmente estamos construindo nossa nova loja de moda.
+            Adicione seu e-mail abaixo para se manter atualizado sobre
+            os anúncios e nossas ofertas de lançamento.
+        </p>
+
+        <div class="search">
+            <!-- Campo de entrada de email -->
+            <input placeholder="Endereço de Email" type="text" id="emailInput">
+            <!-- Botão para enviar email -->
+            <button type="submit" onclick="validarEmail()"><i class="fas fa-arrow-right fa-lg"></i></button>
+            <!-- Ícone de alerta (inicialmente oculto) -->
+            <span class="alert-icon" id="alertIcon">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
+                <path fill="#f44336" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path>
+                <path fill="#fff" d="M29.656,15.516l2.828,2.828l-14.14,14.14l-2.828-2.828L29.656,15.516z"></path>
+                <path fill="#fff" d="M32.484,29.656l-2.828,2.828l-14.14-14.14l2.828-2.828L32.484,29.656z"></path>
+              </svg>
+            </span>
+        </div>
+        <!-- Elemento de exibição de mensagens (dinâmico) -->
+        <div id="mensagem"></div>
+        </div>
+    </div>
+
+    <!-- Imagem da moça para desktop -->
+    <div class="imgmoça"> <img src="projetobase/images/hero-desktop.jpg" alt="foto"></div>
+
+  </div>
+
+</body>
+</html>
